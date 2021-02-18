@@ -210,3 +210,33 @@ while i <= 5:
     i = i + 1
 
 print("DONE")
+
+
+# ----- For Loops -----
+for char in 'Python':
+    print(char)
+
+for item in ['apples', 'grapes', 'cheese']:
+    print(item)
+
+# range object
+for num in range(10):
+    print(num)
+
+for rng in range(11, 20):
+    print(rng)
+
+for step in range(15, 25, 2):
+    print(step)
+
+prices = [10, 20, 30]
+total = 0
+for price in prices:
+    total += price
+print(f"Total: {total}")
+
+# ----- Nested Loops -----
+
+for x in range(5):
+    for y in range(4):
+        print(f'({x}, {y})')
