@@ -22,4 +22,19 @@ print(name)
 is_published = False
 print(is_published)
 
+# ------ Receiving Input -----
+
+name = input('Enter Your Name: ')
+fav_color = input('Enter Your Favorite Color: ')
+
+print(name + ' likes ' + fav_color)
+
+# ----- Type Conversion -----
+birth_year = input('Birth Year: ')
+print(type(birth_year))
+
+age = 2021 - int(birth_year)
+print(age)
+print(type(age))
+
 
