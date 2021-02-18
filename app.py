@@ -134,4 +134,69 @@ import math
 print(math.ceil(2.5))
 print(math.floor(2.5))
 
+# ----- If Statements -----
+
+# conditions:
+# if its a hot day = drink water
+# if its a cold day = wear jacket
+# otherwise = it is lovely
+
+its_hot = False
+its_cold = True
+
+if its_hot:
+    print("It is a hot day")
+    print("drink Water")
+elif its_cold:
+    print("It is cold")
+    print("wear jacket")
+else:
+    print("It is lovely")
+
+print("Have a nice day!")
+
+
+house = 1000000
+good_credit = True
+
+if good_credit:
+    down = house * 0.1
+else:
+    down = house * 0.2
+
+print('$', down)
+
+# ------ Logical Operators -----
+
+high_income = True
+
+if high_income and good_credit:
+    print("Eligible for Loan")
+
+if high_income or good_credit:
+    print("Eligible for Loan")
+
+criminal_record = False
+
+if good_credit and not criminal_record:
+    print("Eligible for Loan")
+
+# ----- Comparison Operators -----
+
+temperature = 70
+
+if temperature >= 70:
+    print('It is a nice day')
+else:
+    print("It is cold out")
+
+username = input("Enter username: ")
+un_count = len(username)
+
+if un_count < 3:
+    print("Must be at least 3 characters!")
+elif un_count > 50:
+    print("Username cannot be over 50 characters")
+else:
+    print("Looks Good!")
 
