@@ -190,13 +190,23 @@ if temperature >= 70:
 else:
     print("It is cold out")
 
-username = input("Enter username: ")
-un_count = len(username)
+# username = input("Enter username: ")
+# un_count = len(username)
+#
+# if un_count < 3:
+#     print("Must be at least 3 characters!")
+# elif un_count > 50:
+#     print("Username cannot be over 50 characters")
+# else:
+#     print("Looks Good!")
 
-if un_count < 3:
-    print("Must be at least 3 characters!")
-elif un_count > 50:
-    print("Username cannot be over 50 characters")
-else:
-    print("Looks Good!")
+# ----- While Loops -----
 
+i = 1
+
+while i <= 5:
+    # print(i)
+    print('*' * i)
+    i = i + 1
+
+print("DONE")
