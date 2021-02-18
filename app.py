@@ -88,4 +88,50 @@ print(course.replace('Beginners', 'Mid-Level'))
 print('for' in course)
 print('For' in course)
 
+# ------ Arithmetic Operators ------
+
+print(10 + 5)
+print(10 - 5)
+print(10 * 5)
+
+# float
+print(10 / 5)
+
+# integer
+print(10 // 5)
+
+# modulos (remainder)
+print(10 % 5)
+
+#power (squared)
+print(10 ** 5)
+
+# ------ Augmented Assignment -----
+
+x = 10
+print(x)
+
+x += 5
+print(x)
+
+x -= 5
+print(x)
+
+# ------ Operator Precedence ------
+# PEMDAS
+y = (2 + 3) * 10 + 3 * 2 ** 2
+print(y)
+
+# ----- Math Functions -----
+z = 4.8
+print(round(z))
+
+#switch to pos
+print(abs(-2.5))
+
+# using dot operators - python 3 math module
+import math
+print(math.ceil(2.5))
+print(math.floor(2.5))
+
 
