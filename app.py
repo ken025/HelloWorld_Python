@@ -240,3 +240,51 @@ print(f"Total: {total}")
 for x in range(5):
     for y in range(4):
         print(f'({x}, {y})')
+
+# ----- Lists ----
+
+# find the greatest number
+numbers = [3, 4, 2, 6, 8, 4]
+max = numbers[0]
+
+for nmbr in numbers:
+    if nmbr > max:
+        max = nmbr
+print(max)
+
+# ----- 2D Lists -----
+
+# matrix = rectangular array of numbers
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+# accessing an item
+print(matrix[0][1])
+# iterating
+for row in matrix:
+    # print(row)
+    for item in row:
+        print(item)
+
+# ----- List Methods -----
+nmb = [5, 10, 15]
+nmb.append(20)
+nmb.remove(5)
+nmb.pop()
+print(nmb)
+print(nmb.index(10))
+print(50 in nmb)
+
+# (index, item)
+nmb.insert(2, 10)
+print(nmb)
+print(nmb.count(10))
+
+nmb.sort()
+print(nmb)
+
+nmb.reverse()
+print(nmb)
