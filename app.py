@@ -339,16 +339,95 @@ print(customer)
 
 # turn digits to strings
 
-phone_num = input("Phone Number: ")
-digit_mapping = {
-    '1': 'One',
-    '2': 'Two',
-    '3': 'Three',
-    '4': 'Four',
-    '5': 'Five'
-}
+# phone_num = input("Phone Number: ")
+# digit_mapping = {
+#     '1': 'One',
+#     '2': 'Two',
+#     '3': 'Three',
+#     '4': 'Four',
+#     '5': 'Five'
+# }
+#
+# output = ''
+# for ch in phone_num:
+#     output += digit_mapping.get(ch, '!') + " "
+# print(output)
 
-output = ''
-for ch in phone_num:
-    output += digit_mapping.get(ch, '!') + " "
-print(output)
+# ----- Functions -----
+
+def greet_user():
+    print("Hello!")
+    print("Welcome aboard!")
+
+greet_user()
+
+# ----- Parameters -----
+
+# def greet_usr(name):
+#     name = input('Name: ')
+#     print(f'Hello, {name}')
+# greet_usr(name)
+
+# keyword arguments
+def grt_usr(first_name, last_name):
+    print(f'Hello, {first_name} {last_name}')
+grt_usr(last_name="Colon", first_name="Ken")
+
+# ----- Return Statement -----
+
+def square(num):
+    return num * num
+print(square(4))
+#     print(num * num)
+# square(4)
+
+# ----- Exceptions -----
+# exit code: 0 = success
+
+# handling errors
+# try:
+#     age = int(input('Age: '))
+#     print(age)
+# except ValueError:
+# # type of error that our program may encounter
+#     print('Invalid Input')
+
+# ----- Classes -----
+class Point:
+    def move(self):
+        print('move')
+
+    def draw(self):
+        print('draw')
+
+
+point1 = Point()
+point1.x = 10
+point1.y = 20
+print(point1.x)
+point1.draw()
+
+# ----- Constructors -----
+class Pnt:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+    def mve(self):
+        print('move')
+
+    def drw(self):
+        print('draw')
+
+point = Pnt(10, 20)
+print(point.x, point.y)
+
+class Person:
+    def __init__(self, name):
+        self.name = name
+
+    def talk(self):
+        print(f"Hi, I'm {name}")
+
+me = Person("Ken")
+me.talk()
