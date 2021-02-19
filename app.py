@@ -427,7 +427,41 @@ class Person:
         self.name = name
 
     def talk(self):
-        print(f"Hi, I'm {name}")
+        print(f"Hi, I'm {self.name}")
 
 me = Person("Ken")
 me.talk()
+
+# inheritance
+class Animal():
+    def __init__(self, breed):
+        self.breed = breed
+
+    def greet(self):
+        print(f"I am a {self.breed}")
+
+class Dog(Animal):
+    pass
+
+class Cat(Animal):
+    pass
+
+dog1 = Dog("Daschund")
+dog1.greet()
+
+cat1 = Cat("Siamese")
+cat1.greet()
+
+# ----- Importing Modules -----
+import converters
+print(converters.kg_to_lbs(70))
+
+# more specific
+# from converters import lbs_to_kg
+
+# ----- Packages -----
+import ecommerce.shipping
+ecommerce.shipping.cal_shipping()
+
+from ecommerce.shipping import cal_shipping
+cal_shipping()
