@@ -465,3 +465,21 @@ ecommerce.shipping.cal_shipping()
 
 from ecommerce.shipping import cal_shipping
 cal_shipping()
+
+# ----- Generating Random Numbers -----
+import random
+for i in range(3):
+    print(random.randint(10, 20))
+
+members = ['Ken', 'Noni', 'Kat']
+leader = random.choice(members)
+print(leader)
+
+class Dice:
+    def roll(self):
+        first = random.randint(1, 6)
+        second = random.randint(1, 6)
+        return first, second
+
+dice = Dice()
+print(dice.roll())
