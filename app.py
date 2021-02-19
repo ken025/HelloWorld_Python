@@ -288,3 +288,67 @@ print(nmb)
 
 nmb.reverse()
 print(nmb)
+
+# get back only unique items
+nmbers = [2, 4, 4, 5, 3, 5, 6, 1]
+uniqs = []
+
+for nmber in nmbers:
+    if nmber not in uniqs:
+        uniqs.append(nmber)
+print(uniqs)
+
+# ----- Tuples -----
+# similar to lists but immutable
+
+tupls = (1, 2, 3)
+print(tupls.count(1))
+print(tupls.index(2))
+print(tupls[2])
+
+# ----- Unpacking ------
+# works with lists and tuppels
+
+coordinates = (1, 2, 3)
+# coordinates[0] * coordinates[1] * coordinates[2]
+# x = coordinates[0]
+# y = coordinates[1]
+# z = coordinates[2]
+
+x, y, z = coordinates
+print(x, y, z)
+
+# ----- Dictionaries ------
+# stores multiple key / value pairs
+
+customer = {
+    "name": "Ken",
+    "age": 20,
+    "is_verified": True
+}
+
+print(customer["name"])
+
+# to give it a default value, enter 2nd argument
+# and receive 'None' instead of error, use get
+print(customer.get('birthdate', 'May 25'))
+
+# add key / value
+customer['height'] = "5'8"
+print(customer)
+
+# turn digits to strings
+
+phone_num = input("Phone Number: ")
+digit_mapping = {
+    '1': 'One',
+    '2': 'Two',
+    '3': 'Three',
+    '4': 'Four',
+    '5': 'Five'
+}
+
+output = ''
+for ch in phone_num:
+    output += digit_mapping.get(ch, '!') + " "
+print(output)
